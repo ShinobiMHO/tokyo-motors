@@ -1,0 +1,205 @@
+/* ============================================================
+   GLOBAL CSS — Tokyo Motors
+   Dark Luxury Design System
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Variables CSS globales ---- */
+:root {
+  --color-black: #0a0a0a;
+  --color-black-light: #111111;
+  --color-black-card: #141414;
+  --color-gold: #c9a96e;
+  --color-gold-light: #d4b97e;
+  --color-gold-dark: #b8924a;
+  --color-white: #ffffff;
+  --color-gray: #a0a0a0;
+}
+
+/* ---- Styles de base ---- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* ---- Scrollbar personnalisée ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a96e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4b97e;
+}
+
+/* ---- Sélection de texte ---- */
+::selection {
+  background: rgba(201, 169, 110, 0.3);
+  color: #ffffff;
+}
+
+/* ---- Classes utilitaires personnalisées ---- */
+@layer components {
+
+  /* Bouton principal or */
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-gold text-black font-semibold text-sm tracking-wider uppercase transition-all duration-300 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 active:scale-95;
+  }
+
+  /* Bouton contour or */
+  .btn-outline-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-gold text-gold font-semibold text-sm tracking-wider uppercase transition-all duration-300 hover:bg-gold hover:text-black hover:shadow-lg hover:shadow-gold/20 active:scale-95;
+  }
+
+  /* Titre en serif (Playfair Display) */
+  .heading-serif {
+    @apply font-serif font-bold text-white;
+  }
+
+  /* Card voiture */
+  .car-card {
+    @apply bg-black-card border border-black-border rounded-none overflow-hidden transition-all duration-300 hover:border-gold/40 hover:shadow-xl hover:shadow-gold/5;
+  }
+
+  /* Badge statut */
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-1 text-xs font-medium border rounded-sm tracking-wider uppercase;
+  }
+
+  /* Input de formulaire */
+  .form-input {
+    @apply w-full bg-black-light border border-black-border text-white px-4 py-3 text-sm placeholder-gray-secondary focus:outline-none focus:border-gold/60 transition-colors duration-200;
+  }
+
+  /* Label de formulaire */
+  .form-label {
+    @apply block text-xs font-medium text-gray-primary uppercase tracking-wider mb-2;
+  }
+
+  /* Séparateur or */
+  .gold-divider {
+    @apply w-16 h-px bg-gold;
+  }
+
+  /* Container principal */
+  .container-main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-20 lg:py-32;
+  }
+
+  /* Overlay gradient bas (pour les images) */
+  .image-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent;
+  }
+}
+
+/* ---- Animations CSS ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Délais d'animation pour les éléments successifs */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+/* ---- Skeleton loading ---- */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #141414 25%,
+    #1a1a1a 50%,
+    #141414 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ---- Swiper customisation pour le carousel ---- */
+.swiper-pagination-bullet {
+  background: #c9a96e !important;
+  opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #c9a96e !important;
+}
+
+/* ---- Table admin ---- */
+.admin-table th {
+  @apply text-xs font-semibold text-gray-primary uppercase tracking-wider;
+}
+
+.admin-table td {
+  @apply text-sm text-gray-light;
+}
+
+/* ---- Focus visible accessible ---- */
+:focus-visible {
+  outline: 2px solid #c9a96e;
+  outline-offset: 2px;
+}
