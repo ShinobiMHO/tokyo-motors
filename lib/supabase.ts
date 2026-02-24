@@ -6,11 +6,15 @@ import { createClient } from '@supabase/supabase-js'
 // des autres projets du workspace (antigravity-hub, shinobi, etc.)
 // ============================================================
 
-const supabaseUrl = process.env.NEXT_PUBLIC_TM_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_TM_SUPABASE_ANON_KEY!
+const supabaseUrl = process.env.NEXT_PUBLIC_TM_SUPABASE_URL || ''
+const supabaseAnonKey = process.env.NEXT_PUBLIC_TM_SUPABASE_ANON_KEY || ''
 
 // Client Supabase principal (client & serveur)
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Créé avec des valeurs vides si les env vars ne sont pas configurées
+// Dans ce cas, le fallback DEMO_CARS sera utilisé automatiquement
+export const supabase = supabaseUrl && supabaseAnonKey
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : createClient('https://placeholder.supabase.co', 'placeholder-anon-key')
 
 // ============================================================
 // TYPES TypeScript — correspond exactement aux tables Supabase
