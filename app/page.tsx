@@ -146,7 +146,7 @@ export default function HomePage() {
               {
                 icon: <DollarSign className="w-6 h-6" />,
                 title: 'Yen at a 30-Year Low',
-                desc: 'The Japanese yen is at its weakest level since 1990 (150 JPY per USD). Every supercar you buy from Japan today is at a historic discount. This window will not last forever.',
+                desc: 'The Japanese yen is at its weakest level since 1990 (155.74 JPY per USD). Every supercar you buy from Japan today is at a historic discount. This window will not last forever.',
               },
               {
                 icon: <FileCheck className="w-6 h-6" />,
@@ -193,7 +193,7 @@ export default function HomePage() {
             <div className="flex items-center justify-center gap-4 mt-6">
               <div className="w-12 h-px bg-[#c9a96e]/40" />
               <p className="text-[#666666] text-xs tracking-wider">
-                All prices verified · 1 USD = 150 JPY
+                All prices verified · 1 USD = 155.74 JPY (live rate)
               </p>
               <div className="w-12 h-px bg-[#c9a96e]/40" />
             </div>
