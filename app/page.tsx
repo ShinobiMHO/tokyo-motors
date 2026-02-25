@@ -10,10 +10,15 @@ import {
   Package,
   Star,
   MessageCircle,
+  TrendingDown,
+  DollarSign,
+  FileCheck,
+  Home,
 } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CarCard from '@/components/CarCard'
+import PriceComparisonCarousel from '@/components/PriceComparisonCarousel'
 import { DEMO_CARS } from '@/lib/supabase'
 import { whatsappLink } from '@/lib/config'
 
@@ -115,9 +120,8 @@ export default function HomePage() {
             <h2 className="font-serif text-4xl lg:text-5xl font-bold text-white mb-4">
               Why Buy From Japan?
             </h2>
-            <p className="text-[#a0a0a0] text-base max-w-xl mx-auto">
-              Japan offers unmatched quality and value for supercars. Here&apos;s why
-              Tokyo Motors is your smartest move.
+            <p className="text-[#a0a0a0] text-base max-w-2xl mx-auto">
+              Japan&apos;s supercar market is structurally different. Lower demand, stricter laws, and a unique ownership culture create conditions you simply won&apos;t find anywhere else.
             </p>
           </div>
 
@@ -127,32 +131,32 @@ export default function HomePage() {
               {
                 icon: <Gauge className="w-6 h-6" />,
                 title: 'Ultra Low Mileage',
-                desc: 'Japanese owners treat their supercars as collector pieces. Average mileage is 2–3× lower than European equivalents.',
+                desc: 'Japanese drivers average just 8,000 km/year — vs 24,000 in the USA and 15,000 in France. Tokyo has the world\'s best public transit, so supercars are driven for pleasure only.',
               },
               {
                 icon: <Shield className="w-6 h-6" />,
-                title: 'Pristine Condition',
-                desc: 'Japan has strict annual vehicle inspections ("Shaken"). Every car on our list has a spotless service history.',
+                title: 'Immaculate Maintenance',
+                desc: 'Japan\'s "Shaken" inspection system (every 2 years, ¥100k–200k) forces owners to maintain their cars perfectly. Full service records are standard. Neglected cars don\'t exist here.',
               },
               {
-                icon: <CheckCircle2 className="w-6 h-6" />,
-                title: 'On-Site Test Drive',
-                desc: 'We test drive every car ourselves. You receive a detailed video report before making any commitment.',
+                icon: <TrendingDown className="w-6 h-6" />,
+                title: 'Prices 20–40% Below Market',
+                desc: 'The Japanese luxury car market is smaller — fewer buyers means faster depreciation. A Ferrari 488 GTB that sells for $249,000 in the USA regularly lists for $168,000 in Japan. Same car. Same mileage.',
               },
               {
-                icon: <Camera className="w-6 h-6" />,
-                title: 'Full Photo & Video',
-                desc: 'Hundreds of high-res photos, undercarriage inspection videos, engine bay shots — every detail, no surprises.',
+                icon: <DollarSign className="w-6 h-6" />,
+                title: 'Yen at a 30-Year Low',
+                desc: 'The Japanese yen is at its weakest level since 1990 (150 JPY per USD). Every supercar you buy from Japan today is at a historic discount. This window will not last forever.',
               },
               {
-                icon: <Gavel className="w-6 h-6" />,
-                title: 'Japanese Auction Access',
-                desc: "We're registered bidders at Japan's top auto auctions (USS, TAA, JU). Access cars before they reach dealers.",
+                icon: <FileCheck className="w-6 h-6" />,
+                title: 'Total Transparency at Auction',
+                desc: 'Japanese auction houses (USS, TAA, JU) grade every car 1–5 and document every scratch, dent, and mechanical issue. No hidden accidents. No flood damage. No rebuilt titles.',
               },
               {
-                icon: <Package className="w-6 h-6" />,
-                title: 'Complete Logistics',
-                desc: 'Export paperwork, shipping, customs clearance, and delivery to your door. We handle everything end-to-end.',
+                icon: <Home className="w-6 h-6" />,
+                title: 'Garaged & Preserved',
+                desc: 'Japanese supercar owners keep their cars in covered garages year-round. No road salt. No UV damage. No hailstorms. Bodywork and interiors stay factory-fresh for decades.',
               },
             ].map((item) => (
               <div
@@ -168,6 +172,48 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ===== REAL PRICE COMPARISONS ===== */}
+      <section className="bg-[#0a0a0a] pb-0">
+        <div className="container-main">
+          {/* Section header */}
+          <div className="text-center pt-16 pb-12">
+            <p className="text-[#c9a96e] text-xs font-medium tracking-[0.3em] uppercase mb-4">
+              Side by Side
+            </p>
+            <h2 className="font-serif text-4xl lg:text-5xl font-bold text-white mb-4">
+              Real Price Comparisons
+            </h2>
+            <p className="text-[#a0a0a0] text-base max-w-xl mx-auto">
+              Same car. Same year. Same mileage.{' '}
+              <span className="text-white font-medium">The difference is staggering.</span>
+            </p>
+            <div className="flex items-center justify-center gap-4 mt-6">
+              <div className="w-12 h-px bg-[#c9a96e]/40" />
+              <p className="text-[#666666] text-xs tracking-wider">
+                All prices verified · 1 USD = 150 JPY
+              </p>
+              <div className="w-12 h-px bg-[#c9a96e]/40" />
+            </div>
+          </div>
+        </div>
+
+        {/* Full-width carousel */}
+        <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
+          <PriceComparisonCarousel />
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center py-10">
+          <p className="text-[#666666] text-sm mb-4">
+            Ready to buy at the Japanese price?
+          </p>
+          <Link href="/contact" className="btn-gold text-sm">
+            Start My Car Search
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 
