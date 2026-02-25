@@ -42,11 +42,13 @@ export default function Navbar() {
   }, [pathname])
 
   const isAdminPage = pathname.startsWith('/admin')
+  // Sur toutes les pages internes (pas la homepage), la navbar a toujours un fond sombre
+  const isHomePage = pathname === '/'
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || isMobileMenuOpen || isAdminPage
+        isScrolled || isMobileMenuOpen || isAdminPage || !isHomePage
           ? 'bg-[#0a0a0a]/95 backdrop-blur-md border-b border-white/5'
           : 'bg-transparent'
       }`}
