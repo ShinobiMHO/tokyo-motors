@@ -17,6 +17,7 @@ import { whatsappLink } from '@/lib/config'
 const NAV_LINKS = [
   { href: '/inventory', label: 'Inventory' },
   { href: '/how-it-works', label: 'How It Works' },
+  { href: '/simulator', label: 'Simulator' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ]

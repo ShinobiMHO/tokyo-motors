@@ -440,6 +440,30 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== SIMULATOR TEASER ===== */}
+      <section className="py-16 bg-[#0d0d0d] border-y border-[#141414]">
+        <div className="container-main">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-4xl mx-auto">
+            <div>
+              <p className="text-[#c9a96e] text-xs font-medium tracking-[0.3em] uppercase mb-2">No Surprises</p>
+              <h2 className="font-serif text-3xl font-bold text-white mb-3">
+                Know your all-in cost before you commit.
+              </h2>
+              <p className="text-[#666] text-sm leading-relaxed max-w-lg">
+                Our import simulator calculates every fee — shipping, US customs, EPA compliance, 
+                French TVA & malus — plus our 10% commission. Transparent, instant, accurate.
+              </p>
+            </div>
+            <Link
+              href="/simulator"
+              className="flex-shrink-0 bg-[#c9a96e] text-black px-10 py-4 font-medium text-sm tracking-widest uppercase hover:bg-[#d4b97e] transition-colors duration-200"
+            >
+              Open Simulator →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== NOTRE COMMISSION ===== */}
       <section className="section-padding bg-[#111111]">
         <div className="container-main">
