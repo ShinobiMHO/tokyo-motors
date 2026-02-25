@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "version": "1.0",
+    "created": "2026-02-25",
+    "company": "Tokyo Motors",
+    "description": "Structured FAQ for luxury supercar exporter Japan → USA & France",
+    "markets": ["USA", "France"]
+  },
+  "categories": [
+    {
+      "id": "find-car",
+      "label_en": "Finding Your Car",
+      "label_fr": "Trouver Votre Voiture",
+      "icon": "🔎"
+    },
+    {
+      "id": "costs",
+      "label_en": "Costs & Pricing",
+      "label_fr": "Coûts & Tarifs",
+      "icon": "💰"
+    },
+    {
+      "id": "legal",
+      "label_en": "Legal & Compliance",
+      "label_fr": "Légalité & Réglementation",
+      "icon": "⚖️"
+    },
+    {
+      "id": "logistics",
+      "label_en": "Logistics & Timeline",
+      "label_fr": "Logistique & Délais",
+      "icon": "🚢"
+    },
+    {
+      "id": "documents",
+      "label_en": "Documents & Registration",
+      "label_fr": "Documents & Immatriculation",
+      "icon": "📄"
+    },
+    {
+      "id": "trust",
+      "label_en": "Trust & Safety",
+      "label_fr": "Confiance & Sécurité",
+      "icon": "🔒"
+    },
+    {
+      "id": "payment",
+      "label_en": "Payment & Financing",
+      "label_fr": "Paiement & Financement",
+      "icon": "💳"
+    },
+    {
+      "id": "supercars",
+      "label_en": "Supercar Specifics",
+      "label_fr": "Spécificités Supercars",
+      "icon": "🏎️"
+    }
+  ],
+  "faq": {
+    "USA": [
+      {
+        "id": "usa-01",
+        "category": "legal",
+        "priority": 1,
+        "question": "Is it legal to import a Ferrari / Lamborghini / Porsche from Japan to the USA?",
+        "answer": "Yes, it's completely legal. European luxury cars sold on the Japanese market (Ferrari, Lamborghini, Porsche, McLaren, Bentley) are European-manufactured vehicles — not JDM-only models. They were originally built to meet international safety and emissions standards. This means EPA and DOT compliance is significantly simpler compared to true JDM-only vehicles. We handle all documentation, EPA Form 3520-1, and DOT Form HS-7 as part of our service. Every car we export arrives legally registered in your name.",
+        "tags": ["legal", "Ferrari", "Lamborghini", "Porsche", "compliance"]
+      },
+      {
+        "id": "usa-02",
+        "category": "legal",
+        "priority": 2,
+        "question": "What is the 25-year rule, and does it apply to my car?",
+        "answer": "The 25-year rule allows any vehicle over 25 years old to be imported to the USA without needing to meet current FMVSS or EPA emission standards — for example, a 1998 Ferrari F355 is now fully eligible. However, Tokyo Motors specializes primarily in newer luxury vehicles (2000s to present) which do NOT qualify under the 25-year rule. These vehicles require EPA/DOT compliance. Because we handle European supercars built to international specs, the compliance process is well-established and manageable — unlike obscure JDM models. We guide you through every step.",
+        "tags": ["25-year-rule", "legal", "compliance", "FMVSS", "EPA"]
+      },
+      {
+        "id": "usa-03",
+        "category": "legal",
+        "priority": 3,
+        "question": "Does a Japanese-market Ferrari or Lamborghini meet US EPA/DOT standards?",
+        "answer": "European luxury cars sold in Japan were manufactured to meet European emissions standards (Euro 5/6), which are comparable to US EPA standards. While they don't come with exact US-spec labels, they can be certified through an Independent Commercial Importer (ICI) or through manufacturer compliance letters. For major marques like Ferrari and Porsche, manufacturer compliance documentation is often available. We work with experienced ICI partners to handle this efficiently. Costs typically range from $2,000–$6,000 for a major European supercar — significantly less than for true JDM vehicles.",
+        "tags": ["EPA", "DOT", "compliance", "emissions", "ICI"]
+      },
+      {
+        "id": "usa-04",
+        "category": "costs",
+        "priority": 1,
+        "question": "What are the import duties/taxes on a supercar from Japan to the USA?",
+        "answer": "Per US Customs and Border Protection (CBP): Passenger cars: 2.5% of the declared value (e.g., $5,000 on a $200,000 Ferrari). Trucks/SUVs: 25% (rarely applies to supercars). No additional luxury tax at federal level. State sales tax is due at registration in your home state. Note: import duty is based on the purchase price, not the US market value — buying a Ferrari at auction for $80,000 means duty on $80,000, not the US retail value. This is one of the significant financial advantages of importing from Japan.",
+        "tags": ["duty", "taxes", "CBP", "customs", "cost"]
+      },
+      {
+        "id": "usa-05",
+        "category": "costs",
+        "priority": 2,
+        "question": "What is the total cost to import a supercar from Japan to the USA?",
+        "answer": "Realistic cost breakdown for a luxury supercar ($80,000–$200,000 purchase price): Japan auction buyer's premium (5–8%), Export agent Japan ($850–$1,200), Inland transport Japan ($200–$500), Ocean freight Japan→US port ($1,500–$3,000), US port fees & handling ($300–$600), Customs broker fee ($300–$500), US import duty 2.5% (~$2,000–$5,000), EPA/DOT compliance ($2,000–$6,000), Tokyo Motors service fee (contact us), State registration (varies). Total on-top-of-purchase costs: typically $8,000–$18,000 depending on vehicle and destination state. We provide a complete cost estimate before you commit.",
+        "tags": ["total cost", "fees", "breakdown", "budget"]
+      },
+      {
+        "id": "usa-06",
+        "category": "logistics",
+        "priority": 1,
+        "question": "How long does the entire process take, from bidding to having the car in my driveway?",
+        "answer": "Typical timeline: Auction & purchase (1–2 weeks), Japan export prep & loading (2–4 weeks), Ocean freight Japan to US West Coast (3–4 weeks; East Coast add 1–2 weeks), US customs clearance (1–2 weeks), EPA/DOT compliance work if needed (2–6 weeks), Title processing (4–6 weeks after compliance). Total: approximately 3–5 months from start to title in hand. We communicate with you at every stage and send photos/videos throughout.",
+        "tags": ["timeline", "shipping", "how long", "process"]
+      },
+      {
+        "id": "usa-07",
+        "category": "logistics",
+        "priority": 4,
+        "question": "Can I drive the car while waiting for the title?",
+        "answer": "This varies by state. Most states issue temporary permits or transit plates that allow limited driving while the title is processed. Some states (e.g., California) have specific rules. Once EPA/DOT compliance is complete and customs cleared, we apply for the US title directly in your name. It typically arrives 4–6 weeks after the car is cleared. We can advise on your specific state's rules.",
+        "tags": ["title", "driving", "registration", "temporary"]
+      },
+      {
+        "id": "usa-08",
+        "category": "find-car",
+        "priority": 1,
+        "question": "How do Japanese car auctions work? Can I see the car before bidding?",
+        "answer": "Japan has a highly developed auction system with major houses including USS, TAA, JU, Aucnet, and HAA Kobe (which specializes in imports and left-hand drive). Each vehicle receives a detailed inspection grade from 1 (poor) to 5 (excellent). Grade 4.5/5 means excellent condition; Grade R/RA means repaired accident — we avoid these for supercars. You don't physically visit, but you receive: detailed inspection reports (translated to English by us), multiple high-resolution photos, mileage verification, service history notes, and any known defects listed. For luxury supercars, we also arrange pre-purchase inspections by independent Japanese specialists upon request.",
+        "tags": ["auction", "Japan", "inspection", "grades", "photos"]
+      },
+      {
+        "id": "usa-09",
+        "category": "trust",
+        "priority": 1,
+        "question": "What are the risks of buying at Japanese auction?",
+        "answer": "Main risks and mitigations: 1) Hidden damage — mitigated by reputable auction houses and optional independent pre-purchase inspections. 2) Odometer fraud — rare in Japan due to strict regulations; we verify via Shaken records. 3) Compliance surprises — we assess compliance risk BEFORE you bid. 4) Currency fluctuation — we give locked total estimates and move quickly. 5) Losing a bid — we bid on multiple lots and typically find the right car within 2–4 auctions. Japan's auction system is actually one of the most transparent and regulated used car markets in the world.",
+        "tags": ["risks", "auction", "fraud", "trust", "safety"]
+      },
+      {
+        "id": "usa-10",
+        "category": "costs",
+        "priority": 3,
+        "question": "Why is a Japanese-market Ferrari/Lamborghini/Porsche cheaper than in the USA?",
+        "answer": "Several factors create this price differential: 1) Japanese depreciation culture — Japanese owners trade in frequently, creating supply. 2) Low-mileage examples — Japanese owners typically drive less. 3) Market conditions — Japan has an oversupply of premium used vehicles. 4) Some Japanese luxury cars are right-hand drive, reducing local resale value. Example: A 2010 Ferrari 458 Italia might sell at Japanese auction for ~$100–120K, while the same car in excellent condition retails for $130–160K in the US.",
+        "tags": ["price", "cheaper", "why Japan", "value", "savings"]
+      },
+      {
+        "id": "usa-11",
+        "category": "find-car",
+        "priority": 2,
+        "question": "Do I need to be physically in Japan to buy the car?",
+        "answer": "No. We handle the entire process remotely on your behalf. You never need to visit Japan. We source the vehicle, bid at auction, handle all Japanese export paperwork, ship the car, and manage US customs and compliance. You simply communicate with us via email or phone, approve bids, and wait for your car to arrive.",
+        "tags": ["remote", "online", "Japan visit", "process"]
+      },
+      {
+        "id": "usa-12",
+        "category": "payment",
+        "priority": 1,
+        "question": "How does payment work? Is it safe to send money overseas?",
+        "answer": "We use secure international wire transfers and work with established Japanese financial partners. Process: 1) Pay a deposit to initiate the search. 2) Upon winning at auction, we invoice you for the full Japan purchase amount (payable within 48–72 hours). 3) Remaining service fees invoiced upon US arrival. We are a registered US business and provide full invoicing. We are happy to provide references from past clients.",
+        "tags": ["payment", "wire transfer", "security", "deposit"]
+      },
+      {
+        "id": "usa-13",
+        "category": "payment",
+        "priority": 2,
+        "question": "Can I finance the purchase of a Japanese import supercar?",
+        "answer": "Financing imported vehicles can be challenging through traditional banks as the title process takes time. Options include: cash purchase (most common for supercars), personal/business loan from your bank secured against other assets, specialty exotic car finance companies (some will finance once US title is in hand), and we have financing partners who work with imported exotics — ask us for current options.",
+        "tags": ["financing", "loan", "payment options"]
+      },
+      {
+        "id": "usa-14",
+        "category": "logistics",
+        "priority": 2,
+        "question": "Which US ports do you ship to?",
+        "answer": "We primarily ship to Port of Los Angeles (San Pedro), Port of Seattle/Tacoma, Port of Baltimore, and Port of New Jersey/Newark. We can arrange delivery to any US port and handle inland transportation to your door or a preferred facility anywhere in the continental US. Alaska and Hawaii shipping available at additional cost.",
+        "tags": ["ports", "shipping", "delivery", "logistics"]
+      },
+      {
+        "id": "usa-15",
+        "category": "documents",
+        "priority": 1,
+        "question": "What documentation will I receive with the car?",
+        "answer": "You will receive: Japanese Export Certificate (Yushutsu Shomeisho), Bill of Lading, US EPA Form 3520-1, US DOT Form HS-7, US Customs Entry Summary, ICI compliance certificate (if applicable), US Title in your name, Vehicle history report translated from Japanese, and any available original Japanese service records.",
+        "tags": ["documents", "title", "EPA", "DOT", "paperwork"]
+      },
+      {
+        "id": "usa-16",
+        "category": "trust",
+        "priority": 3,
+        "question": "What happens if the car is damaged during shipping?",
+        "answer": "All vehicles are shipped with marine cargo insurance. We use RoRo (Roll-on/Roll-off) shipping for driveable vehicles — cars are driven on/off the ship rather than lifted by crane, which is the safest method. In the rare event of damage, marine insurance covers repairs. We document the vehicle's condition thoroughly before loading with photos and video.",
+        "tags": ["shipping damage", "insurance", "RoRo", "safety"]
+      },
+      {
+        "id": "usa-17",
+        "category": "supercars",
+        "priority": 1,
+        "question": "Are Japanese-market Ferraris different from US-spec Ferraris?",
+        "answer": "Japanese-market Ferraris are typically Euro-spec vehicles imported to Japan by Ferrari's Japanese distributor. They share the same mechanical platform as Euro/global-spec cars. Key differences from US-spec: speedometer in km/h (can be recalibrated), headlight adjustment may need minor modification, potentially right-hand drive on some older models, emissions documentation in Japanese (we handle translation and compliance). For most modern Ferraris (post-2000), the difference is minimal and compliance is straightforward.",
+        "tags": ["Ferrari", "Japan spec", "Euro spec", "US spec", "differences"]
+      },
+      {
+        "id": "usa-18",
+        "category": "legal",
+        "priority": 4,
+        "question": "Can I import a car under 25 years old without EPA/DOT compliance? (Show & Display exemption)",
+        "answer": "Yes, for historically significant vehicles. The Show and Display exemption (NHTSA) allows certain vehicles of unique historical or technological significance to be imported and driven up to 2,500 miles/year. This applies to specific models deemed collectible. Approval requires a NHTSA petition. We can assess whether your target vehicle qualifies. Note: this limits road use significantly.",
+        "tags": ["Show and Display", "exemption", "NHTSA", "25-year", "collector"]
+      },
+      {
+        "id": "usa-19",
+        "category": "legal",
+        "priority": 5,
+        "question": "What is an ICI (Independent Commercial Importer) and do I need one?",
+        "answer": "An ICI is an EPA-registered company authorized to modify and certify vehicles for US emissions compliance. For European supercars sold in Japan, ICI work often involves certifying that the vehicle's emissions system meets EPA standards, making minor software or hardware modifications if needed, and issuing a compliance label. For European-origin supercars (Ferrari, Lamborghini, Porsche, McLaren), the ICI process is typically streamlined because these manufacturers have established EPA compliance documentation. Costs: $2,000–$6,000 depending on model.",
+        "tags": ["ICI", "EPA", "compliance", "certification"]
+      },
+      {
+        "id": "usa-20",
+        "category": "supercars",
+        "priority": 2,
+        "question": "Are right-hand drive cars legal to drive in all US states?",
+        "answer": "Yes. All 50 states permit right-hand drive (RHD) vehicles on public roads. There is no federal prohibition, and no state bans them. Insurance is available from specialty insurers (Hagerty, Grundy, Adrian Flux USA). The main practical consideration is toll booths and drive-through windows — minor inconveniences for a supercar owner!",
+        "tags": ["RHD", "right-hand drive", "legal", "states", "insurance"]
+      },
+      {
+        "id": "usa-21",
+        "category": "costs",
+        "priority": 4,
+        "question": "Will I save money buying a supercar from Japan vs. buying locally in the USA?",
+        "answer": "Often yes — significantly. The savings depend on the model: Ferrari 458 — Japan auction ~$100–130K vs US market ~$140–180K (savings $20,000–$40,000 after import costs). Lamborghini Huracán — similar 15–25% differential. Porsche 911 GT3 — Japan often 20–30% below US prices. McLaren 720S — Japan 15–25% below US. Factors affecting savings: model rarity, yen/dollar rate, compliance complexity. We run the numbers for you before you commit.",
+        "tags": ["savings", "comparison", "cost", "value", "investment"]
+      },
+      {
+        "id": "usa-22",
+        "category": "find-car",
+        "priority": 3,
+        "question": "What is the Japanese auction grade system?",
+        "answer": "Japanese auction grades are issued by certified inspectors at the auction house: Grade S/6 = new or near-new; Grade 5 = excellent, minimal wear; Grade 4.5 = very good, very minor cosmetic marks; Grade 4 = good, minor cosmetic issues; Grade 3.5 = above average, some light scratches/dents; Grade 3 = average, noticeable cosmetic issues; Grade 2 = poor, significant cosmetic damage; Grade 1 = heavy damage; Grade RA = repaired accident; Grade R = accident history. For supercars, we target Grade 4.5 and above. We never source Grade R/RA for our clients.",
+        "tags": ["auction grades", "condition", "inspection", "quality"]
+      },
+      {
+        "id": "usa-23",
+        "category": "trust",
+        "priority": 2,
+        "question": "How do I know the mileage is real? Is odometer fraud common in Japan?",
+        "answer": "Odometer fraud is significantly less common in Japan than in other markets due to strict regulations and cultural norms. Additionally: Japanese Shaken (vehicle inspection) records track mileage at each inspection every 2 years; auction inspection reports note any inconsistencies; service records show mileage at each service visit; modern vehicles have electronic odometers that are harder to tamper with. We cross-reference Shaken records with auction reports for every vehicle.",
+        "tags": ["odometer", "mileage", "fraud", "Shaken", "verification"]
+      },
+      {
+        "id": "usa-24",
+        "category": "find-car",
+        "priority": 4,
+        "question": "Can I request a specific car or model?",
+        "answer": "Both options are available: From inventory — we maintain a curated selection of pre-sourced vehicles ready for export. Custom sourcing — tell us exactly what you want (model, year, color, spec, mileage) and we search the entire Japanese auction network (thousands of cars per week) to find your perfect match. Custom sourcing typically adds 2–4 weeks to the timeline.",
+        "tags": ["custom", "specific model", "inventory", "sourcing"]
+      },
+      {
+        "id": "usa-25",
+        "category": "supercars",
+        "priority": 3,
+        "question": "What warranty do I get on an imported vehicle?",
+        "answer": "We are honest about this: imported used vehicles do not come with manufacturer warranties (those are void outside the original market). However: we offer a comprehensive pre-export inspection on every vehicle; we recommend specialist extended warranty programs for exotic cars (CARCHEX, Endurance, or exotic-specific providers); many European supercar dealers in the US will service Japanese-market vehicles — they're the same mechanical platform; factory Ferrari/Lamborghini/Porsche service centers accept these vehicles.",
+        "tags": ["warranty", "guarantee", "after-sale", "service"]
+      },
+      {
+        "id": "usa-26",
+        "category": "documents",
+        "priority": 2,
+        "question": "What is 'Shaken' and why does it matter?",
+        "answer": "Shaken (車検) is Japan's mandatory vehicle inspection, required every 2 years (annually for older vehicles). It's significantly more rigorous than most US state inspections. A car with fresh Shaken has been recently certified for roadworthiness by the Japanese government. A car with remaining Shaken validity demonstrates it was recently maintained and in good condition — it's a positive quality indicator.",
+        "tags": ["Shaken", "inspection", "Japan", "maintenance", "roadworthy"]
+      },
+      {
+        "id": "usa-27",
+        "category": "supercars",
+        "priority": 5,
+        "question": "Do you handle the import for Tesla or electric vehicles from Japan?",
+        "answer": "Yes. Japanese-market Teslas and other EVs can be imported. Tesla vehicles sold globally are largely identical mechanically, making compliance simpler. Note that charging standards may differ (Japan uses CHAdeMO; US uses CCS/Tesla Supercharger) — we advise on any adapter needs. Battery health reports are available for most EVs sold at Japanese auction.",
+        "tags": ["Tesla", "EV", "electric", "battery", "charging"]
+      },
+      {
+        "id": "usa-28",
+        "category": "trust",
+        "priority": 4,
+        "question": "What if I'm not happy with the car when it arrives?",
+        "answer": "We provide full transparency at every step. Before we bid, you approve the specific car based on our translated inspection report, photos, and our written assessment. Once shipped, returns are not possible (the car is yours upon auction purchase). This is why our pre-bid consultation is thorough — we help you understand exactly what you're buying. For cars with issues post-arrival that were not disclosed in the auction report, we pursue compensation from the auction house on your behalf.",
+        "tags": ["satisfaction", "returns", "issues", "problems", "transparency"]
+      },
+      {
+        "id": "usa-29",
+        "category": "legal",
+        "priority": 6,
+        "question": "Are there any cars you won't import?",
+        "answer": "We don't import: vehicles with salvage/flood titles (Grade R/RA), vehicles where EPA/DOT compliance is cost-prohibitive or impossible, stolen vehicles (all exports require valid Japanese deregistration documents), vehicles subject to OFAC sanctions. We also advise against certain models where US compliance costs would eliminate the financial advantage of buying from Japan.",
+        "tags": ["restrictions", "limitations", "salvage", "compliance"]
+      },
+      {
+        "id": "usa-30",
+        "category": "find-car",
+        "priority": 5,
+        "question": "How do I get started?",
+        "answer": "1) Contact us with your desired vehicle (or browse our inventory). 2) We provide a free cost estimate with full breakdown. 3) You pay a small search deposit to begin sourcing. 4) We find vehicles matching your criteria and present options. 5) You approve, we bid. 6) Upon winning, you wire payment within 48 hours. 7) We handle everything — export, shipping, customs, compliance. 8) Car arrives at your door, title follows. Timeline: approximately 3–5 months.",
+        "tags": ["get started", "process", "steps", "how to buy"]
+      }
+    ],
+    "France": [
+      {
+        "id": "fr-01",
+        "category": "legal",
+        "priority": 1,
+        "question": "Est-ce légal d'importer une supercar depuis le Japon en France ?",
+        "answer": "Oui, c'est tout à fait légal. L'importation de véhicules d'occasion depuis des pays tiers (dont le Japon) est permise en France et dans l'Union Européenne, sous réserve de respecter les démarches douanières et d'homologation. Les supercars européennes vendues au Japon (Ferrari, Lamborghini, Porsche, McLaren, Bentley) sont des véhicules d'origine européenne — elles peuvent être réceptionnées à titre isolé (RTI) en France de manière plus directe que les véhicules purement japonais. Nous gérons l'intégralité du processus pour vous.",
+        "tags": ["légal", "légalité", "importation", "France", "autorisé"]
+      },
+      {
+        "id": "fr-02",
+        "category": "legal",
+        "priority": 2,
+        "question": "Qu'est-ce que la Réception à Titre Isolé (RTI) et est-ce obligatoire ?",
+        "answer": "La RTI est la procédure administrative permettant d'immatriculer en France un véhicule qui n'a pas été homologué sur le marché européen lors de sa mise en circulation. Pour les supercars européennes importées du Japon, la RTI est obligatoire pour obtenir la carte grise française. La procédure implique : dossier technique complet transmis à la DREAL, tests UTAC (sécurité, émissions, freinage), pour les véhicules post-2006 un test d'émissions, passage du contrôle technique, demande de carte grise via ANTS. Nous prenons en charge la totalité de cette procédure avec nos partenaires homologateurs.",
+        "tags": ["RTI", "réception à titre isolé", "homologation", "DREAL", "UTAC"]
+      },
+      {
+        "id": "fr-03",
+        "category": "costs",
+        "priority": 1,
+        "question": "Quel est le coût total pour importer une supercar du Japon en France ?",
+        "answer": "Estimation réaliste pour une supercar de luxe (prix d'achat 50 000€–150 000€) : Frais d'enchères japonaises (5–8%), Agent d'export Japon (800€–1 200€), Transport intérieur Japon (200€–400€), Fret maritime Japon→France (1 500€–2 500€), Droits de douane UE 6,5% (~3 250€–9 750€), TVA à l'importation 20% (sur valeur+fret+douanes), Frais de port et dédouanement (500€–1 000€), RTI/Homologation (2 000€–8 000€), Frais Tokyo Motors (nous contacter), Carte grise (selon puissance fiscale). ATTENTION : Le malus écologique peut être très élevé pour les supercars. Nous calculons le coût total précis avant votre décision.",
+        "tags": ["coût total", "budget", "frais", "devis", "estimation"]
+      },
+      {
+        "id": "fr-04",
+        "category": "costs",
+        "priority": 2,
+        "question": "Quels sont les droits de douane pour importer une voiture du Japon en France ?",
+        "answer": "Pour l'importation de véhicules depuis le Japon (pays hors UE) : Droits de douane : 6,5% de la valeur en douane (prix d'achat + fret + assurance). TVA : 20% sur (valeur en douane + droits de douane). Exemple pour une Ferrari 458 achetée 80 000€ : valeur en douane ~82 000€, droits de douane 5 330€, base TVA 87 330€, TVA 17 466€. Total taxes import : ~22 800€. L'accord commercial UE-Japon (en vigueur depuis 2019) a réduit progressivement les droits sur certains véhicules neufs, mais les voitures d'occasion restent soumises à 6,5%.",
+        "tags": ["droits de douane", "TVA", "taxes", "douanes", "6,5%"]
+      },
+      {
+        "id": "fr-05",
+        "category": "costs",
+        "priority": 3,
+        "question": "Qu'est-ce que le malus écologique et comment s'applique-t-il sur une voiture importée ?",
+        "answer": "Le malus CO2 est une taxe française due lors de la première immatriculation en France. Il s'applique de la même façon aux véhicules importés d'occasion. Barème 2024–2025 (indicatif) : à partir de 123 g/km le malus commence. À 200 g/km : ~10 000€. À 250 g/km : ~30 000€. À 300 g/km+ : peut dépasser 50 000€. Exemples : Ferrari 458 (~320 g/km) → malus 50 000€–60 000€+. Lamborghini Huracán (~290 g/km) → 40 000€–50 000€. Porsche 911 Carrera (~200 g/km) → 5 000€–15 000€. Nous calculons le malus précis pour chaque véhicule avant votre décision.",
+        "tags": ["malus", "malus écologique", "CO2", "taxe", "immatriculation"]
+      },
+      {
+        "id": "fr-06",
+        "category": "legal",
+        "priority": 3,
+        "question": "L'homologation d'une Ferrari ou Lamborghini achetée au Japon est-elle possible en France ?",
+        "answer": "Oui. Les Ferrari, Lamborghini, McLaren et autres supercars européennes vendues sur le marché japonais peuvent être homologuées en France via la procédure RTI. Ce sont des véhicules d'origine européenne dont les données techniques sont disponibles auprès des constructeurs. La plupart des modèles ont des équivalences émissions reconnues par l'UTAC. Pour les véhicules post-2006, le test d'émissions pour grandes marques européennes est souvent en test simplifié (~200€) plutôt qu'en test prototype (~1 400€ avec 80–90% d'échec pour les JDM purs).",
+        "tags": ["homologation", "Ferrari", "Lamborghini", "UTAC", "possible"]
+      },
+      {
+        "id": "fr-07",
+        "category": "logistics",
+        "priority": 1,
+        "question": "Combien de temps prend le processus d'importation du Japon vers la France ?",
+        "answer": "Calendrier typique : Enchères et achat (1–3 semaines), Préparation export Japon (2–4 semaines), Fret maritime Japon→France Le Havre/Marseille (5–7 semaines), Dédouanement (1–2 semaines), RTI/Homologation (4–12 semaines selon le véhicule), Carte grise (1–3 semaines après homologation). Total : environ 4–7 mois du début à la livraison avec carte grise française.",
+        "tags": ["délai", "durée", "combien de temps", "calendrier", "timeline"]
+      },
+      {
+        "id": "fr-08",
+        "category": "costs",
+        "priority": 4,
+        "question": "Le malus écologique ne rend-il pas l'importation non rentable ?",
+        "answer": "C'est une question légitime. Pour les supercars fortement émissives, le malus peut être très élevé. Cas où l'import reste avantageux : voitures rares ou de collection (faible disponibilité sur le marché français), modèles avec malus modéré (Porsche 911, McLaren hybrides, GT sportives), usage piste uniquement (pas de malus). Cas où c'est moins intéressant : supercars avec émissions >250 g/km et malus >40 000€ sauf si prix japonais suffisamment inférieur. Nous calculons le coût total réel vs le prix français du même véhicule AVANT toute décision.",
+        "tags": ["malus", "rentabilité", "avantage", "comparaison", "honnêteté"]
+      },
+      {
+        "id": "fr-09",
+        "category": "find-car",
+        "priority": 1,
+        "question": "Dois-je me déplacer au Japon pour acheter le véhicule ?",
+        "answer": "Non. Nous gérons l'intégralité du processus à distance. Vous n'avez jamais besoin de vous rendre au Japon. Nous identifions les véhicules correspondant à vos critères dans les maisons d'enchères japonaises, vous présentons des rapports d'inspection traduits en français, et n'enchérissons qu'avec votre accord. Toute la communication se fait par email, téléphone ou WhatsApp.",
+        "tags": ["à distance", "Japon", "déplacement", "processus", "pratique"]
+      },
+      {
+        "id": "fr-10",
+        "category": "supercars",
+        "priority": 1,
+        "question": "Le véhicule sera-t-il en conduite à droite ou à gauche ?",
+        "answer": "La plupart des véhicules vendus au Japon sont en conduite à droite (volant à droite). Cependant, de nombreuses supercars européennes vendues au Japon sont disponibles en conduite à gauche (volant à gauche), car ces voitures ont été exportées depuis l'Europe vers le Japon en version gauche. Ferrari, Lamborghini et Porsche ont notamment de nombreux exemplaires gauche au Japon. Conduire une voiture à droite est légal en France mais demande une adaptation (dépassements, péages). Si vous souhaitez absolument une conduite à gauche, nous le spécifions dans la recherche.",
+        "tags": ["conduite à droite", "conduite à gauche", "volant", "gauche", "droite"]
+      },
+      {
+        "id": "fr-11",
+        "category": "trust",
+        "priority": 1,
+        "question": "Les voitures japonaises sont-elles fiables ? Y a-t-il plus de problèmes mécaniques ?",
+        "answer": "Les supercars européennes vendues au Japon sont soumises au Shaken japonais (contrôle technique biannuel très strict). Les propriétaires japonais sont réputés pour leur entretien rigoureux. Le marché japonais produit régulièrement des véhicules avec kilométrage faible, historique d'entretien documenté, et pas de rouillage (climat japonais tempéré, moins de sel routier). Les risques mécaniques ne sont pas supérieurs à un achat d'occasion en Europe — souvent inférieurs.",
+        "tags": ["fiabilité", "mécanique", "état", "entretien", "Japon", "qualité"]
+      },
+      {
+        "id": "fr-12",
+        "category": "payment",
+        "priority": 1,
+        "question": "Comment fonctionne le paiement ? Est-ce sécurisé d'envoyer de l'argent au Japon ?",
+        "answer": "Nous sommes basés à Tokyo et opérons comme société légalement enregistrée. Le flux de paiement : 1) Acompte pour démarrer la recherche. 2) Virement international pour le paiement de la voiture (délai 48–72h après l'enchère). 3) Solde des frais à la livraison en France. Nous fournissons des factures complètes, numéro d'identification fiscale japonais et toute documentation nécessaire pour votre comptable. Des références clients sont disponibles sur demande.",
+        "tags": ["paiement", "virement", "sécurité", "acompte", "facture"]
+      },
+      {
+        "id": "fr-13",
+        "category": "documents",
+        "priority": 2,
+        "question": "Quelle est la différence entre un véhicule 'neuf au sens douanier' et un véhicule d'occasion ?",
+        "answer": "Au sens des douanes européennes, un véhicule est considéré 'neuf' s'il a moins de 6 mois ou moins de 6 000 km. Cela affecte le traitement TVA : véhicule neuf (douanes) = TVA obligatoirement collectée à l'importation ; véhicule d'occasion = TVA sur la marge du vendeur possible sous certaines conditions. La plupart des supercars que nous importons sont des véhicules d'occasion au sens douanier. Pour les acheteurs professionnels, des optimisations fiscales peuvent être possibles — consultez votre expert-comptable.",
+        "tags": ["neuf", "occasion", "TVA", "douanes", "fiscal"]
+      },
+      {
+        "id": "fr-14",
+        "category": "documents",
+        "priority": 1,
+        "question": "Quels papiers vais-je recevoir avec le véhicule ?",
+        "answer": "Vous recevrez : Certificat d'exportation japonais (déregistration officielle), Bill of Lading (connaissement maritime), DAE/mainlevée douanière (preuve de dédouanement), Procès-verbal de RTI (homologation française), Certificat de conformité RTI permettant l'immatriculation, Historique d'entretien japonais traduit, Rapport d'inspection de l'enchère traduit, Carte grise délivrée par l'ANTS après immatriculation.",
+        "tags": ["documents", "carte grise", "RTI", "dossier", "papiers"]
+      },
+      {
+        "id": "fr-15",
+        "category": "supercars",
+        "priority": 2,
+        "question": "Y a-t-il une garantie sur le véhicule importé ?",
+        "answer": "La garantie constructeur d'origine est généralement expirée ou non transférable pour des supercars d'occasion importées. En revanche : garantie légale de conformité (2 ans pour les défauts cachés, selon le Code de la consommation) ; inspection pré-expédition approfondie ; orientation vers des garanties mécaniques tierces spécialisées en supercars (Opteven, Autosphere, etc.).",
+        "tags": ["garantie", "garantie légale", "défauts cachés", "assurance"]
+      },
+      {
+        "id": "fr-16",
+        "category": "legal",
+        "priority": 4,
+        "question": "Puis-je importer une voiture japonaise récente (moins de 10 ans) ? Est-ce homologable ?",
+        "answer": "Oui, les véhicules récents sont homologables mais la procédure est plus complexe. Post-2006 : test d'émissions obligatoire à l'UTAC. Post-2011 (Euro 5) : les supercars européennes vendues au Japon ont souvent une équivalence reconnue (test simplifié). Véhicules hybrides et électriques : procédure simplifiée. Pour les Ferrari, Lamborghini, Porsche post-2010, la RTI est généralement réalisable et rentable. Nous évaluons chaque modèle au cas par cas et vous donnons une estimation précise avant engagement.",
+        "tags": ["récent", "post-2006", "UTAC", "Euro 5", "homologable"]
+      },
+      {
+        "id": "fr-17",
+        "category": "legal",
+        "priority": 5,
+        "question": "Le contrôle technique d'une voiture japonaise pose-t-il des problèmes spécifiques ?",
+        "answer": "Le contrôle technique français s'applique normalement à toutes les voitures quelle que soit leur origine. Points de vigilance : Feux — les normes japonaises diffèrent légèrement, les optiques doivent être vérifiées et parfois ajustées. Compteur — doit afficher km/h (généralement déjà en km/h pour les japonaises). Pour les supercars européennes (Ferrari, Lamborghini), le CT est généralement sans problème particulier car ces voitures répondent déjà aux normes européennes.",
+        "tags": ["contrôle technique", "CT", "feux", "compteur", "normes"]
+      },
+      {
+        "id": "fr-18",
+        "category": "supercars",
+        "priority": 3,
+        "question": "Puis-je acheter une voiture pour un usage piste uniquement, sans homologation ?",
+        "answer": "Oui. Si le véhicule est destiné exclusivement à un usage circuit (jamais sur route ouverte), il n'a pas besoin d'être immatriculé ni homologué. La voiture sera transportée sur plateau entre votre domicile et le circuit. Cas d'usage : versions Cup ou GT3 racing de Porsche/Ferrari/McLaren, voitures trop émissives pour que le malus soit justifié. Aucune homologation ou carte grise requise — juste le dédouanement.",
+        "tags": ["piste", "circuit", "sans immatriculation", "track car", "usage"]
+      },
+      {
+        "id": "fr-19",
+        "category": "trust",
+        "priority": 2,
+        "question": "Y a-t-il un risque que la voiture soit saisie à la douane ?",
+        "answer": "Ce risque existe si les formalités sont mal gérées — c'est pourquoi vous passez par un professionnel. Avec Tokyo Motors : tous les documents d'export japonais sont en ordre (déregistration légale, certificat d'exportation) ; la déclaration en douane est préparée par notre transitaire agréé ; la valeur déclarée est la valeur réelle (nous ne pratiquons pas la sous-déclaration, illégale et exposant à de lourdes pénalités) ; nous travaillons avec des transitaires spécialisés en véhicules de luxe depuis plusieurs années.",
+        "tags": ["saisie", "douane", "risque", "confiscation", "légal"]
+      },
+      {
+        "id": "fr-20",
+        "category": "find-car",
+        "priority": 2,
+        "question": "Pourquoi acheter via Tokyo Motors plutôt que d'aller moi-même aux enchères japonaises ?",
+        "answer": "Les enchères japonaises (USS, TAA, JU, HAA Kobe) sont fermées aux acheteurs directs étrangers — il faut être membre avec adresse commerciale japonaise et statut de négociant automobile enregistré. Il est donc impossible pour un particulier étranger d'enchérir directement. De plus : rapports d'inspection en japonais, paiement en JPY sous 48h, logistique d'export complexe, homologation française requérant une expertise locale. Notre valeur ajoutée : accès total au marché japonais, transparence totale des coûts, expertise RTI/homologation, accompagnement de A à Z.",
+        "tags": ["pourquoi Tokyo Motors", "enchères directes", "impossible", "valeur ajoutée"]
+      }
+    ]
+  },
+  "competitor_insights": {
+    "strengths_found": [
+      "theimportguys.com: Transparent fee structure with exact line-by-line costs",
+      "grandtourismeimport.com: Deep technical explanations (PTAC, UTAC, Euro 4 norms)",
+      "nippon-auto-import.fr: Brand-specific pages (Porsche, BMW) good for SEO"
+    ],
+    "weaknesses_found": [
+      "Most competitors hide pricing behind 'contact us'",
+      "No competitor explicitly addresses luxury European supercars sold in Japan (vs JDM-only)",
+      "No competitor provides full total cost calculator",
+      "Minimal discussion of real risks and honest limitations",
+      "No comparison of Japan price vs local market price",
+      "FAQs lack clear categories and prioritization",
+      "No model-specific FAQ pages (e.g., 'How to import a Ferrari 458 from Japan')"
+    ],
+    "opportunities_for_tokyo_motors": [
+      "Position as THE expert for European supercar imports from Japan specifically",
+      "Build interactive total cost calculator",
+      "Create model-specific landing pages with detailed import guides",
+      "Show real savings examples with actual numbers",
+      "Be transparent about malus/compliance costs — builds trust",
+      "Testimonials with specific car examples (John S., Ferrari 458, saved $35K)",
+      "Blog posts: 'Best supercars to import from Japan in 2025' etc."
+    ]
+  },
+  "suggested_faq_structure": {
+    "priority_categories": [
+      "1. Is this legal? (first fear to address)",
+      "2. How much will it really cost? (second biggest fear)",
+      "3. How does the process work? (third concern)",
+      "4. Can I trust you? (fourth concern)",
+      "5. Specific model questions (conversion/engagement)"
+    ],
+    "cta_recommendations": [
+      "Each FAQ answer should end with a soft CTA: 'Contact us for a free personalized estimate'",
+      "Add a 'Did this answer your question?' feedback widget",
+      "Link to relevant blog posts for deeper explanations",
+      "Show a 'Recently imported' section near FAQ to build social proof"
+    ]
+  }
+}

@@ -290,7 +290,7 @@ export default function HomePage() {
                 </h2>
                 <div className="gold-divider mb-6" />
                 <p className="text-[#a0a0a0] text-base leading-relaxed mb-6">
-                  We believe in complete transparency. Our fee is simple, fair, and fixed:
+                  We believe in complete transparency. Our fee is simple, fair, and fixed. Beyond sourcing, we leverage our private network of dealers, collectors, and auction insiders to negotiate the best possible price — so your 10% pays for itself many times over.
                 </p>
 
                 {/* La grande formule */}
@@ -308,6 +308,8 @@ export default function HomePage() {
                 <ul className="space-y-3">
                   {[
                     'Full car sourcing & auction access',
+                    'Private network research & deep market sourcing',
+                    'Price negotiation to secure the best possible deal',
                     'Physical inspection + test drive',
                     'Complete photo & video report',
                     'Export paperwork & documentation',
