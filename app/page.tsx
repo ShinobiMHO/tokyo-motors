@@ -17,18 +17,101 @@ import {
 } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import CarCard from '@/components/CarCard'
+// CarCard removed — replaced by Popular Models section
 import PriceComparisonCarousel from '@/components/PriceComparisonCarousel'
-import { DEMO_CARS } from '@/lib/supabase'
+// DEMO_CARS import removed — Popular Models now use static data
 import { whatsappLink } from '@/lib/config'
 
 // ============================================================
 // Homepage — Page d'accueil Tokyo Motors
 // ============================================================
 
+// Popular Models — les modèles les plus demandés par les clients
+const POPULAR_MODELS = [
+  {
+    brand: 'Ferrari',
+    model: '488 GTB / F8 Tributo',
+    demand: '🔥 Most Requested',
+    price_range: '$160k – $280k JP',
+    description: 'The definitive mid-engine Ferrari. Japanese examples have average 12,000 km, often dealer-maintained. Strongest resale in the US.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2018_Ferrari_488_GTB_4.jpg/1280px-2018_Ferrari_488_GTB_4.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Lamborghini',
+    model: 'Huracán EVO / Tecnica',
+    demand: '🔥 High Demand',
+    price_range: '$145k – $210k JP',
+    description: 'Naturally aspirated V10 icon. Japan prices run 25-35% below comparable US listings. LHD available.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Lamborghini_Huracan_EVO_IMG_0851.jpg/1280px-Lamborghini_Huracan_EVO_IMG_0851.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Porsche',
+    model: '911 GT3 (992)',
+    demand: '⭐ Collector Grade',
+    price_range: '$140k – $230k JP',
+    description: 'Allocation-limited track weapon. Japan often has examples before they hit US dealer lots — months earlier, at a fraction of the price.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Porsche_992_GT3_1X7A0323.jpg/1200px-Porsche_992_GT3_1X7A0323.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'McLaren',
+    model: '720S / 750S',
+    demand: '🔥 High Demand',
+    price_range: '$155k – $260k JP',
+    description: 'McLarens depreciate sharply in Japan — conservative market, fewer supercar enthusiasts. The arbitrage vs the US is consistently 25-40%.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/2018_McLaren_720S_V8_S-A_4.0.jpg/1200px-2018_McLaren_720S_V8_S-A_4.0.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Ferrari',
+    model: '296 GTB / GTS',
+    demand: '⭐ Rising Demand',
+    price_range: '$220k – $380k JP',
+    description: 'The PHEV Ferrari — lower CO₂ means lower import tax in France. Japanese stock is growing. Ideal for both US and European buyers.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/2022_Ferrari_296_%28cropped%29.jpg/1200px-2022_Ferrari_296_%28cropped%29.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Lamborghini',
+    model: 'Urus / Urus S',
+    demand: '🔥 Most Requested SUV',
+    price_range: '$155k – $230k JP',
+    description: 'The super-SUV with the highest global resale demand. Japan examples are well-maintained, often garaged. Savings of $50k+ vs US.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2019_Lamborghini_Urus_Auto_%28YP19_WKX%29_%2848136282677%29.jpg/1280px-2019_Lamborghini_Urus_Auto_%28YP19_WKX%29_%2848136282677%29.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Rolls-Royce',
+    model: 'Ghost / Wraith',
+    demand: '⭐ Ultra-Luxury',
+    price_range: '$180k – $350k JP',
+    description: 'Japanese Rolls-Royces are showroom condition. Owners rarely drive them — 8,000-15,000 km is typical for a 5-year-old Ghost.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2021_Rolls-Royce_Ghost_Extended%2C_front_8.1.22.jpg/1280px-2021_Rolls-Royce_Ghost_Extended%2C_front_8.1.22.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Porsche',
+    model: '911 Turbo S (992)',
+    demand: '⭐ High Value',
+    price_range: '$140k – $200k JP',
+    description: 'Daily-driveable 640hp weapon. Japan savings vs US average $80-120k on comparable examples. Always LHD in Japan dealer stock.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Porsche_992_GT3_1X7A0323.jpg/1200px-Porsche_992_GT3_1X7A0323.jpg',
+    href: '/contact',
+  },
+  {
+    brand: 'Bentley',
+    model: 'Continental GT Speed',
+    demand: '⭐ Grand Tourer',
+    price_range: '$130k – $220k JP',
+    description: 'Grand touring perfection. Japanese examples are typically single-owner, dealer-serviced, and stored indoors. 15-25% below US prices.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bentley_Continental_GT_First_Edition_%2849919050697%29_%28cropped%29_%28cropped%29.jpg/1280px-Bentley_Continental_GT_First_Edition_%2849919050697%29_%28cropped%29_%28cropped%29.jpg',
+    href: '/contact',
+  },
+]
+
 export default function HomePage() {
-  // 3 voitures mises en avant pour la section "Featured Cars"
-  const featuredCars = DEMO_CARS.filter((car) => car.featured).slice(0, 3)
 
   return (
     <>
@@ -291,30 +374,67 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== FEATURED CARS ===== */}
+      {/* ===== POPULAR MODELS ===== */}
       <section className="section-padding bg-[#0a0a0a]">
         <div className="container-main">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
               <p className="text-[#c9a96e] text-xs font-medium tracking-[0.3em] uppercase mb-4">
-                Currently Available
+                Most Requested
               </p>
               <h2 className="font-serif text-4xl lg:text-5xl font-bold text-white">
-                Featured Cars
+                Popular Models
               </h2>
+              <p className="text-[#a0a0a0] text-sm mt-3 max-w-lg">
+                The models our clients request most. All regularly available in Japan — at prices you won&apos;t find elsewhere.
+              </p>
             </div>
             <Link
-              href="/inventory"
-              className="flex items-center gap-2 text-[#c9a96e] text-sm hover:gap-3 transition-all duration-200"
+              href="/contact"
+              className="flex items-center gap-2 text-[#c9a96e] text-sm hover:gap-3 transition-all duration-200 whitespace-nowrap"
             >
-              View All Inventory <ArrowRight className="w-4 h-4" />
+              Request Any Model <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          {/* Grille des voitures vedettes */}
+          {/* Grille Popular Models — 3 colonnes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredCars.map((car, idx) => (
-              <CarCard key={car.id} car={car} priority={idx === 0} />
+            {POPULAR_MODELS.map((car) => (
+              <Link
+                key={`${car.brand}-${car.model}`}
+                href={car.href}
+                className="group block bg-[#141414] border border-[#1a1a1a] hover:border-[#c9a96e]/40 transition-all duration-300 overflow-hidden"
+              >
+                {/* Photo */}
+                <div className="relative h-52 overflow-hidden">
+                  <Image
+                    src={car.image}
+                    alt={`${car.brand} ${car.model}`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  {/* Overlay sombre */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  {/* Badge demande */}
+                  <div className="absolute top-3 left-3 bg-black/70 border border-[#c9a96e]/40 px-3 py-1">
+                    <span className="text-[#c9a96e] text-xs font-medium tracking-wider">{car.demand}</span>
+                  </div>
+                </div>
+
+                {/* Infos */}
+                <div className="p-5">
+                  <p className="text-[#a0a0a0] text-xs font-medium tracking-widest uppercase mb-1">{car.brand}</p>
+                  <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-[#c9a96e] transition-colors duration-200">
+                    {car.model}
+                  </h3>
+                  <p className="text-[#c9a96e] text-sm font-medium mb-3">{car.price_range}</p>
+                  <p className="text-[#666] text-xs leading-relaxed line-clamp-3">{car.description}</p>
+                  <div className="mt-4 flex items-center gap-2 text-[#c9a96e] text-xs font-medium">
+                    Request This Model <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" />
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
