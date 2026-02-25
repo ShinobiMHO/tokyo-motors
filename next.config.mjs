@@ -27,6 +27,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: '*.supabase.co',
       },
+      // Wikimedia Commons (photos Wikipedia vérifiées)
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+      },
     ],
   },
 }

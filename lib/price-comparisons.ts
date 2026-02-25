@@ -34,7 +34,7 @@ export const priceComparisons: PriceComparison[] = [
     model: '911 GT3 (992)',
     year: 2022,
     mileage_km: 5000,
-    image_url: 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Porsche_992_GT3_1X7A0323.jpg/1200px-Porsche_992_GT3_1X7A0323.jpg',
     japan_price_jpy: 21980000,
     japan_price_usd: jpy2usd(21980000),   // ~$141,133
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU6805079543/index.html',
@@ -50,7 +50,7 @@ export const priceComparisons: PriceComparison[] = [
     model: '911 Turbo S (992)',
     year: 2022,
     mileage_km: 4160,
-    image_url: 'https://images.unsplash.com/photo-1574680178050-55c6a2dec0e4?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Porsche_992_GT3_1X7A0323.jpg/1200px-Porsche_992_GT3_1X7A0323.jpg',
     japan_price_jpy: 21980000,
     japan_price_usd: jpy2usd(21980000),   // ~$141,133
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU6805079543/index.html',
@@ -66,7 +66,7 @@ export const priceComparisons: PriceComparison[] = [
     model: 'F12 Berlinetta',
     year: 2014,
     mileage_km: 28000,
-    image_url: 'https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ferrari_F12berlinetta_IMG_2941.jpg/1200px-Ferrari_F12berlinetta_IMG_2941.jpg',
     japan_price_jpy: 24130000,
     japan_price_usd: jpy2usd(24130000),   // ~$154,938
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU5252913575/index.html',
@@ -82,7 +82,7 @@ export const priceComparisons: PriceComparison[] = [
     model: 'GTC4Lusso',
     year: 2019,
     mileage_km: 15000,
-    image_url: 'https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ferrari_GTC4Lusso_IMG_4353.jpg/1200px-Ferrari_GTC4Lusso_IMG_4353.jpg',
     japan_price_jpy: 21800000,
     japan_price_usd: jpy2usd(21800000),   // ~$139,977
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU6332327276/index.html',
@@ -98,7 +98,7 @@ export const priceComparisons: PriceComparison[] = [
     model: '296 GTB',
     year: 2024,
     mileage_km: 480,
-    image_url: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/2022_Ferrari_296_%28cropped%29.jpg/1200px-2022_Ferrari_296_%28cropped%29.jpg',
     japan_price_jpy: 35000000,
     japan_price_usd: jpy2usd(35000000),   // ~$224,734
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU6201347430/index.html',
@@ -107,21 +107,21 @@ export const priceComparisons: PriceComparison[] = [
     savings_usd: 320000 - jpy2usd(35000000),
     savings_percent: Math.round(((320000 - jpy2usd(35000000)) / 320000) * 1000) / 10,
   },
-  // ── #6 — Savings: $79,236 ───────────────────────────────────────────────────
+  // ── #6 — Savings: $82,000 ───────────────────────────────────────────────────
   {
-    id: 'mclaren-765lt-2021',
-    brand: 'McLaren',
-    model: '765LT',
-    year: 2021,
-    mileage_km: 4000,
-    image_url: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=85&fm=jpg',
-    japan_price_jpy: 49800000,
-    japan_price_usd: jpy2usd(49800000),   // ~$319,764
-    japan_url: 'https://www.carsensor.net/usedcar/detail/AU6435315616/index.html',
-    usa_price_usd: 399000,
-    usa_url: 'https://bringatrailer.com/listing/2021-mclaren-765lt-17/',
-    savings_usd: 399000 - jpy2usd(49800000),
-    savings_percent: Math.round(((399000 - jpy2usd(49800000)) / 399000) * 1000) / 10,
+    id: 'ferrari-488-gtb-2018',
+    brand: 'Ferrari',
+    model: '488 GTB',
+    year: 2018,
+    mileage_km: 12000,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2018_Ferrari_488_GTB_4.jpg/1280px-2018_Ferrari_488_GTB_4.jpg',
+    japan_price_jpy: 25290000,
+    japan_price_usd: jpy2usd(25290000),
+    japan_url: 'https://www.carsensor.net/usedcar/detail/AU6460725205/index.html',
+    usa_price_usd: 245000,
+    usa_url: 'https://bringatrailer.com/listing/2018-ferrari-488-gtb-22/',
+    savings_usd: 245000 - jpy2usd(25290000),
+    savings_percent: Math.round(((245000 - jpy2usd(25290000)) / 245000) * 1000) / 10,
   },
   // ── #7 — Savings: $75,096 ───────────────────────────────────────────────────
   {
@@ -130,7 +130,7 @@ export const priceComparisons: PriceComparison[] = [
     model: 'Continental GT Speed',
     year: 2022,
     mileage_km: 13000,
-    image_url: 'https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bentley_Continental_GT_First_Edition_%2849919050697%29_%28cropped%29_%28cropped%29.jpg/1280px-Bentley_Continental_GT_First_Edition_%2849919050697%29_%28cropped%29_%28cropped%29.jpg',
     japan_price_jpy: 21010000,
     japan_price_usd: jpy2usd(21010000),   // ~$134,904
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU6692024411/index.html',
@@ -146,7 +146,7 @@ export const priceComparisons: PriceComparison[] = [
     model: '720S',
     year: 2021,
     mileage_km: 5000,
-    image_url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&fm=jpg',
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/2018_McLaren_720S_V8_S-A_4.0.jpg/1200px-2018_McLaren_720S_V8_S-A_4.0.jpg',
     japan_price_jpy: 24830000,
     japan_price_usd: jpy2usd(24830000),   // ~$159,432
     japan_url: 'https://www.carsensor.net/usedcar/detail/AU6841290424/index.html',
